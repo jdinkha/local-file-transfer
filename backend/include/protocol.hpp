@@ -1,3 +1,4 @@
+//this header file defines the structure of the message
 #pragma once
 #include <string>
 #include <cstdint>
@@ -6,16 +7,18 @@
 
 enum class MessageType {
 	DISCOVERY,
+	DISCOVERY_RESPONSE,
 	FILE_INFO,
 	FILE_CHUNK,
 	TRANSFER_PROGRESS,
+	DISCONNECT,
 	ERROR
 };
 
 struct FileInfo {
 	std::string filename;
 	uint64_t filesize;
-	std::string checkHash;
+	std::string checksum;
 };
 
 struct TransferMessage {
