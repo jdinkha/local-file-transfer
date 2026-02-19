@@ -27,3 +27,10 @@ To build, clone the repo, cd into the 'backend' directory, then run:
 - Fix '~' directory issue
 - Ask to overwrite/skip old files with same filename
 - Change bytes to kb, mb, gb
+
+# Showcase
+- Sending:
+<img width="770" height="509" alt="_sending" src="https://github.com/user-attachments/assets/ab886398-2bcc-4a10-a6af-e925236292f5" />
+
+- Receiving:
+<img width="1606" height="1254" alt="_receiving" src="https://github.com/user-attachments/assets/ef0320d2-3920-4b3f-894d-7fe547aa2372" />
