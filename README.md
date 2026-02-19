@@ -15,7 +15,7 @@ To build, clone the repo, cd into the 'backend' directory, then run:
 (You can use -j3 or -j2 on older hardware)
 
 # Future goals
-- Frontend
+- Frontend (including making it easier to select files)
 - Mobile support
 - Ask which directory to store files in
 - Fix disconnection issue on receiving server
