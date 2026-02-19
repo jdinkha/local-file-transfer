@@ -305,7 +305,9 @@ void FileTransferServer::handleClient(int client_socket, struct sockaddr_in clie
 
 				case MessageType::ERROR: {
 					std::string error_msg = msg.data.value("reason", "Unknown error");
-					std::cerr << "Error from client " << client_ip << ": " << error_msg << std::endl;
+					if (error_msg != "client_disconnect" && error_msg != "client_finished") {
+						std::cerr << "Error from client " << client_ip << ": " << error_msg << std::endl;
+					}
 					break;
 				}
 
